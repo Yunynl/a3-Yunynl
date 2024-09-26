@@ -40,10 +40,12 @@
 <!-- Logout Button -->
 <button id="logout-button">Logout</button>
 
-<script src="js/main.js"></script>
+<script src="App.js"></script>
 
 <!-- Logout Button Script -->
 <script>
+  document.getElementById('check-list').addEventListener('click', fetchActivities);  // Fetch activities on button click
+
   document.getElementById('logout-button').addEventListener('click', function() {
     window.location.href = '/logout';  // Redirect to the logout route
   });
